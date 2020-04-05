@@ -1,15 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { getWinProb } from "./utils/StatUtils";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>{getWinProb(100 + 1, 1000 - 100 + 1, 120 + 1, 1000 - 120 + 1)}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
