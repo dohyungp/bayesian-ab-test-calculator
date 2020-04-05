@@ -1,16 +1,27 @@
 import React from "react";
 
 export const Row = ({ id, total, conversion }) => {
+  const cvr = total > 0 ? `${((conversion / total) * 100).toFixed(2)}%` : "";
   return (
     <tr>
       <td>{`${id}`}</td>
       <td>
-        <input name={`total${id}`} type="number" min="0" />
+        <input
+          className="metric-input"
+          name={`total-${id}`}
+          type="number"
+          min="0"
+        />
       </td>
       <td>
-        <input name={`conversion${id}`} type="number" min="0" />
+        <input
+          className="metric-input"
+          name={`conversion-${id}`}
+          type="number"
+          min="0"
+        />
       </td>
-      <td>{total > 0 ? conversion / total : ""}</td>
+      <td>{cvr}</td>
     </tr>
   );
 };
