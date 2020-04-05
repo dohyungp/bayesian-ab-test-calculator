@@ -20,5 +20,5 @@ export function getWinProb(armA, armB) {
         betaln(alphaA, betaA)
     );
 
-  return prob;
+  return prob * 100;
 }
