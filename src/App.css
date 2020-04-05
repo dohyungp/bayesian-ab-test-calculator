@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+input {
+  border: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +39,90 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App .container {
+  /* width: 80%; */
+  margin: 10%;
+  -webkit-box-shadow: 0 29px 60px 0 rgba(54, 57, 73, 0.09);
+  box-shadow: 0 29px 60px 0 rgba(54, 57, 73, 0.09);
+}
+
+.App .container .table {
+  width: 100%;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0;
+}
+
+.App .container .table .header {
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #7b8086;
+  border: 0;
+}
+
+.header th {
+  margin: 0;
+  font-size: 20px;
+  padding: 0px 10px 35px 10px;
+  vertical-align: baseline;
+}
+
+.metric-input {
+  border-bottom: 1px solid #43464b;
+  padding: 15px 0 15px 0;
+  font-weight: 400;
+  width: 90%;
+  border-radius: 0;
+  background: inherit;
+  text-align: right;
+  font-weight: 400;
+}
+
+.metric-input::-webkit-outer-spin-button,
+.metric-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.metric-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.metric-input:focus {
+  outline: none;
+}
+
+.table td {
+  vertical-align: middle;
+  padding: 40px 0;
+}
+
+.add-button {
+  width: auto;
+  min-width: 230px;
+  font-size: 15px;
+  background-color: #fff;
+  border-color: #6167e8;
+  color: #6167e8;
+  padding: 21px 10px 19px;
+  outline: none;
+}
+
+.add-button:hover {
+  background-color: #6167e8;
+  border-color: #6167e8;
+  color: #fff;
+}
+
+.winner td {
+  background: #6167e8;
+  color: #fff;
+}
+
+.winner .metric-input {
+  border-color: #fff;
+  color: #fff;
 }

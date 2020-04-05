@@ -10,9 +10,14 @@ function App() {
 
   function handleChange(e) {
     e.preventDefault();
+    const [metricName, armName] = e.target.name.split("-");
+    const metricValue = parseInt(e.target.value);
     setArm({
       ...arm,
-      [e.target.name]: parseInt(e.target.value) || 0
+      [armName]: {
+        ...arm[[armName]],
+        [metricName]: metricValue || 0,
+      },
     });
   }
 
@@ -24,36 +29,40 @@ function App() {
 
   return (
     <div className="App">
-      <form onChange={handleChange}>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>방문자 수</th>
-              <th>전환 수</th>
-              <th>전환율</th>
-            </tr>
-          </thead>
-          <tbody>
-            {table.map(elem => (
-              <Row
-                key={elem}
-                id={elem}
-                total={arm[`total${elem}`] || 0}
-                conversion={arm[`conversion${elem}`] || 0}
-              />
-            ))}
-          </tbody>
-        </table>
-      </form>
+      <div className="container">
+        <form onChange={handleChange}>
+          <table className="table">
+            <thead className="header">
+              <tr>
+                <th></th>
+                <th>Visitors</th>
+                <th>Conversion</th>
+                <th>CVR(%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {table.map((elem) => (
+                <Row
+                  key={`key-${elem}`}
+                  id={elem}
+                  total={arm[elem]?.total || 0}
+                  conversion={arm[elem]?.conversion || 0}
+                />
+              ))}
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <button className="add-button" onClick={addNewVariation}>
+        Add Another Variation
+      </button>
 
-      <button onClick={addNewVariation}>Add Another Variation</button>
-
+      <p>{JSON.stringify(arm)}</p>
       <h1>
         {getWinProb(
-          [arm.totalA || 0, arm.conversionA || 0],
-          [arm.totalB || 0, arm.conversionB || 0]
-        )}
+          [arm["total-A"] || 0, arm["conversion-A"] || 0],
+          [arm["total-B"] || 0, arm["conversion-B"] || 0]
+        ).toFixed(2)}
       </h1>
     </div>
   );
