@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>{getWinProb(100 + 1, 1000 - 100 + 1, 120 + 1, 1000 - 120 + 1)}</p>
+        <p>{getWinProb([1000, 100], [1000, 120])}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
