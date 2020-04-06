@@ -1,9 +1,9 @@
 import React from "react";
 
-export const Row = ({ id, total, conversion }) => {
+export const Row = ({ id, total, conversion, isWin }) => {
   const cvr = total > 0 ? `${((conversion / total) * 100).toFixed(1)}%` : "";
   return (
-    <tr>
+    <tr className={isWin ? "winner" : ""}>
       <td>{`${id}`}</td>
       <td>
         <input
