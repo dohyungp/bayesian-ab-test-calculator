@@ -44,8 +44,6 @@ input {
 .App .container {
   /* width: 80%; */
   margin: 10%;
-  -webkit-box-shadow: 0 29px 60px 0 rgba(54, 57, 73, 0.09);
-  box-shadow: 0 29px 60px 0 rgba(54, 57, 73, 0.09);
 }
 
 .App .container .table {
@@ -56,8 +54,30 @@ input {
   border-spacing: 0;
 }
 
+.page-header {
+  background: #6167e8;
+  color: #fff;
+}
+
+.page-header .page-header-inner {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header .page-header-inner .title {
+  margin: 15px;
+  font-size: 20px;
+}
+
+.App .container .table .body {
+  -webkit-box-shadow: 0 29px 60px 0 rgba(54, 57, 73, 0.09);
+  box-shadow: 0 29px 60px 0 rgba(54, 57, 73, 0.09);
+}
+
 .App .container .table .header {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.66667;
   color: #7b8086;
   border: 0;
@@ -65,7 +85,8 @@ input {
 
 .header th {
   margin: 0;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-weight: 400;
   padding: 0px 10px 35px 10px;
   vertical-align: baseline;
 }

@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import { getWinProb } from "./utils/StatUtils";
 import Row from "./components/Row";
+import { Header } from "./components/Header";
 function App() {
   const [arm, setArm] = useState({});
   const [alphabet, setAlphabet] = useState(67);
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <div className="container">
         <form onChange={handleChange}>
           <table className="table">
@@ -40,7 +42,7 @@ function App() {
                 <th>CVR(%)</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="body">
               {table.map((elem) => (
                 <Row
                   key={`key-${elem}`}

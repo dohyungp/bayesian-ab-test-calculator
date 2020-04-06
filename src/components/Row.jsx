@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Row = ({ id, total, conversion }) => {
-  const cvr = total > 0 ? `${((conversion / total) * 100).toFixed(2)}%` : "";
+  const cvr = total > 0 ? `${((conversion / total) * 100).toFixed(1)}%` : "";
   return (
     <tr>
       <td>{`${id}`}</td>
