@@ -5,7 +5,12 @@ export const Header = () => {
     <header className="page-header">
       <div className="page-header-inner">
         <div className="title">
-          <a href="/">Bayesian A/B Testing Calculator</a>
+          <a href="/">
+            <span role="img" aria-label="dice">
+              🎲
+            </span>
+            Bayesian A/B Testing Calculator
+          </a>
         </div>
       </div>
     </header>
