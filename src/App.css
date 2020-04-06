@@ -71,6 +71,11 @@ input {
   font-size: 20px;
 }
 
+.page-header .page-header-inner .title a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .App .container .table .body {
   -webkit-box-shadow: 0 29px 60px 0 rgba(54, 57, 73, 0.09);
   box-shadow: 0 29px 60px 0 rgba(54, 57, 73, 0.09);
