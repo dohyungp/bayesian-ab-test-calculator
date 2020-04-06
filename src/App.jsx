@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "./App.css";
-import { getWinProb } from "./utils/StatUtils";
 import Row from "./components/Row";
 import { Header } from "./components/Header";
 function App() {
@@ -62,6 +61,7 @@ function App() {
                 <th>Visitors</th>
                 <th>Conversion</th>
                 <th>CVR(%)</th>
+                <th>{`Pr(${winner || "A"} > other)`}</th>
               </tr>
             </thead>
             <tbody className="body">
@@ -69,8 +69,8 @@ function App() {
                 <Row
                   key={`key-${elem}`}
                   id={elem}
-                  total={arm[elem]?.total || 0}
-                  conversion={arm[elem]?.conversion || 0}
+                  currentArm={arm[elem]}
+                  winnerArm={arm[winner]}
                   isWin={winner === elem}
                 />
               ))}
@@ -81,14 +81,6 @@ function App() {
       <button className="add-button" onClick={addNewVariation}>
         Add Another Variation
       </button>
-
-      <p>{JSON.stringify(arm)}</p>
-      <h1>
-        {getWinProb(
-          [arm["total-A"] || 0, arm["conversion-A"] || 0],
-          [arm["total-B"] || 0, arm["conversion-B"] || 0]
-        ).toFixed(2)}
-      </h1>
     </div>
   );
 }
