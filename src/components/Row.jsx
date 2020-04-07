@@ -1,9 +1,20 @@
 import React from "react";
+import { getWinProb } from "../utils/StatUtils";
 
-export const Row = ({ id, total, conversion }) => {
-  const cvr = total > 0 ? `${((conversion / total) * 100).toFixed(2)}%` : "";
+export const Row = ({ id, currentArm, winnerArm, isWin }) => {
+  const cvr =
+    currentArm?.total > 0
+      ? `${((currentArm?.cvr || 0) * 100).toFixed(1)}%`
+      : "";
+
+  const beatRatio = isWin
+    ? "— %"
+    : `${getWinProb(
+        [currentArm?.total || 0, currentArm?.conversion || 0],
+        [winnerArm?.total || 0, winnerArm?.conversion || 0]
+      ).toFixed(1)}%`;
   return (
-    <tr>
+    <tr className={isWin ? "winner" : ""}>
       <td>{`${id}`}</td>
       <td>
         <input
@@ -22,6 +33,7 @@ export const Row = ({ id, total, conversion }) => {
         />
       </td>
       <td>{cvr}</td>
+      <td>{beatRatio}</td>
     </tr>
   );
 };
