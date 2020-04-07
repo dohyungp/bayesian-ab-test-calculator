@@ -5,7 +5,7 @@ export const Header = () => {
     <header className="page-header">
       <div className="page-header-inner">
         <div className="title">
-          <a href="/">
+          <a href="/bayesian-ab-test-calculator">
             <span role="img" aria-label="dice">
               🎲
             </span>
