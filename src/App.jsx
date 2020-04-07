@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import Row from "./components/Row";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 function App() {
   const [arm, setArm] = useState({});
   const [alphabet, setAlphabet] = useState(67);
@@ -81,6 +82,7 @@ function App() {
       <button className="add-button" onClick={addNewVariation}>
         Add Another Variation
       </button>
+      <Footer />
     </div>
   );
 }
