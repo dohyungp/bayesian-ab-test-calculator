@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/bayesian-ab-test-calculator/static/css/main.b72977e4.chunk.css",
-    "main.js": "/bayesian-ab-test-calculator/static/js/main.ef132de0.chunk.js",
-    "main.js.map": "/bayesian-ab-test-calculator/static/js/main.ef132de0.chunk.js.map",
+    "main.css": "/bayesian-ab-test-calculator/static/css/main.bc675dc4.chunk.css",
+    "main.js": "/bayesian-ab-test-calculator/static/js/main.61543ea2.chunk.js",
+    "main.js.map": "/bayesian-ab-test-calculator/static/js/main.61543ea2.chunk.js.map",
     "runtime-main.js": "/bayesian-ab-test-calculator/static/js/runtime-main.235e7ada.js",
     "runtime-main.js.map": "/bayesian-ab-test-calculator/static/js/runtime-main.235e7ada.js.map",
     "static/js/2.24cd732b.chunk.js": "/bayesian-ab-test-calculator/static/js/2.24cd732b.chunk.js",
     "static/js/2.24cd732b.chunk.js.map": "/bayesian-ab-test-calculator/static/js/2.24cd732b.chunk.js.map",
     "index.html": "/bayesian-ab-test-calculator/index.html",
-    "precache-manifest.dba10da042ba0433e5395744632d240a.js": "/bayesian-ab-test-calculator/precache-manifest.dba10da042ba0433e5395744632d240a.js",
+    "precache-manifest.5b1720da6826a4d7b35f4a8bdb3db673.js": "/bayesian-ab-test-calculator/precache-manifest.5b1720da6826a4d7b35f4a8bdb3db673.js",
     "service-worker.js": "/bayesian-ab-test-calculator/service-worker.js",
-    "static/css/main.b72977e4.chunk.css.map": "/bayesian-ab-test-calculator/static/css/main.b72977e4.chunk.css.map",
+    "static/css/main.bc675dc4.chunk.css.map": "/bayesian-ab-test-calculator/static/css/main.bc675dc4.chunk.css.map",
     "static/js/2.24cd732b.chunk.js.LICENSE.txt": "/bayesian-ab-test-calculator/static/js/2.24cd732b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.235e7ada.js",
     "static/js/2.24cd732b.chunk.js",
-    "static/css/main.b72977e4.chunk.css",
-    "static/js/main.ef132de0.chunk.js"
+    "static/css/main.bc675dc4.chunk.css",
+    "static/js/main.61543ea2.chunk.js"
   ]
 }

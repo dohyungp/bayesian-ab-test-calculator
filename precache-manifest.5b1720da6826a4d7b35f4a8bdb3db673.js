@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad94655b01eb368e5f1e5862d5e2f944",
+    "revision": "de9eda85760785d84dd912bec657fab1",
     "url": "/bayesian-ab-test-calculator/index.html"
   },
   {
-    "revision": "9f5b02a0f26cd9018828",
-    "url": "/bayesian-ab-test-calculator/static/css/main.b72977e4.chunk.css"
+    "revision": "e3d80d303f2879c02850",
+    "url": "/bayesian-ab-test-calculator/static/css/main.bc675dc4.chunk.css"
   },
   {
     "revision": "a6bb43941e5cff888d58",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bayesian-ab-test-calculator/static/js/2.24cd732b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f5b02a0f26cd9018828",
-    "url": "/bayesian-ab-test-calculator/static/js/main.ef132de0.chunk.js"
+    "revision": "e3d80d303f2879c02850",
+    "url": "/bayesian-ab-test-calculator/static/js/main.61543ea2.chunk.js"
   },
   {
     "revision": "7339eb515c53519fc903",

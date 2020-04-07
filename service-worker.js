@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bayesian-ab-test-calculator/precache-manifest.dba10da042ba0433e5395744632d240a.js"
+  "/bayesian-ab-test-calculator/precache-manifest.5b1720da6826a4d7b35f4a8bdb3db673.js"
 );
 
 self.addEventListener('message', (event) => {
