@@ -2,7 +2,7 @@
 
 ### Description
 
-This project was developed based on [Evan Miler Bayesian A/B Testing Article](https://www.evanmiller.org/bayesian-ab-testing.html).
+This project was developed based on [Evan Miller Bayesian A/B Testing Article](https://www.evanmiller.org/bayesian-ab-testing.html).
 
 Essentially the project logic is based on OVO(one vs one) algorithm. Because A/B/C/N Bayesian Test calculation required high-cost computation($O(N^{variant count})$)
 
